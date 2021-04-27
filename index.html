@@ -135,7 +135,7 @@
                                 <div class="section-block">
                                     <ol>
                                         <li><p><i>Please note that,In order to run error query ,which is provided by this extension,make sure dev-boon extension is activated by pressing (Ctrl+Shift+A).</i></p></li>
-                                        <li><p>Users Can run this query directly on our extension’s search box by pressing
+                                        <li><p>Users can run this query directly on our extension’s search box by pressing
                                             (Ctrl+Shift+E). Then user will be given an option ( StackOverFlow or YouTube).</p></li>
                                     </ol>
                                 </div>
@@ -201,6 +201,53 @@
                                 </div><!--//section-block-->
 
                             </section><!--//doc-section-->
+
+                            <section id="completion-query-heading" class="doc-section">'
+                                <h1 class="section-title">Completion Query</h1>
+                                <h3 id = "completion-query-intro" class="block-title">Introduction</h3>
+                                <div class="section-block">
+                                    <i>Completion Query</i> is a query which helps developers to generate complete code snippets from imcomplete code snippets.It uses a fine-tuned gpt2-large model (which has been trained on downstream dataset).Link of dataset is <a href="https://github.com/TheAlgorithms/">Algorithms Dataset</a>.For now,this model has been trained on algorithms dataset,which means it can only generate algorithms.
+                                </div>
+                                <h3 id = "completion-query-features" class="block-title">Features</h3>
+                                <div class="section-block">
+                                    <ol>
+                                        <li><p>It automatically detects for what type of programming language,code snippets should be recommended.</p></li>
+                                        <li><p>During fine-tuning of our model,our model uses a concept called <i>Transfer Learning in NLP</i>.</p></li>
+                                        <li><p>It uses a model called <i>gpt2-large pretrained model</i> from <i>transformers library</i> inorder to automatically generate a complete code snippet from incomplete code snippet.</p></li>
+                                        <li><p>The model has been designed as a sequential( different layers) model in such a way that it can memorize or summarize rules or patterns of statistically commonly-used codes by the real programmers.</p></li>
+                                        <li><p><i>Masked Self Attention</i> mechanism has been used while fine-tuning of model.In this mechanism,all 2-D vectors which point to different locations have been seen differently by machine and thus machine can identify them differently.After that, dot multiplication happens between queries and keys which indicates how much attention a token should pay to another because the dot multiplication.result is larger if two vectors have more similar pointing directions, and vice versa.</p></li>
+                                        <li><p>In our model,at each layer ,Masked Self Attention mechanism is used.</p></li>
+                                        <li><p>This query only generates code snippets of python and java language.</p></li>
+                                    </ol>
+                                </div>
+                                <h3 id = "completion-query-run" class="block-title">How to run</h3>
+                                <div class="section-block">
+                                    <ol>
+                                        <li><p><i>Please note that,In order to run completion query ,which is provided by this extension,make sure dev-boon extension is activated by pressing (Ctrl+Shift+A).</i></p></li>
+                                        <li><p>Users can run completion query for the selected query(hovered) on the editor by pressing (Ctrl+Shift+W).</p></li>
+                                    </ol>
+                                </div>
+                                <h3 id = "completion-query-design" class="block-title">Design</h3>
+                                <div class="section-block">
+                                    <img src="assets/images/completionQuery.jpg">
+                                    <img src="assets/images/maskedSelfAttention.png">
+                                </div>
+                                <h3 id = "completion-query-video" class="section-title">Demonstration</h3>
+                                <div class="section-block">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <!-- <h6>Demo video here</h6> -->
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1hy_ugf-iek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div><!--//row-->
+                                </div><!--//section-block-->
+
+                            </section><!--//doc-section-->
+
+
+                            
 
 
 
