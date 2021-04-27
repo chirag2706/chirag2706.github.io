@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>APIScanner</title>
+    <!-- Meta -->
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="">
+    <meta name="author" content="">    
+    <link rel="shortcut icon" href="favicon.ico">  
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <!-- FontAwesome JS -->
+    <script defer src="assets/fontawesome/js/all.js"></script>
+    <!-- Global CSS -->
+    <link rel="stylesheet" href="assets/plugins/bootstrap/css/bootstrap.min.css">   
+    <!-- Plugins CSS -->    
+    <link rel="stylesheet" href="assets/plugins/prism/prism.css">
+    <link rel="stylesheet" href="assets/plugins/elegant_font/css/style.css">  
+      
+    <!-- Theme CSS -->
+    <link id="theme-style" rel="stylesheet" href="assets/css/styles.css">
+    
+</head> 
+
+<body class="body-green">
+    <div class="page-wrapper">
+        <!-- ******Header****** -->
+        <header id="header" class="header">
+            <div class="container">
+                <div class="branding">
+                    <h1 class="logo">
+                        <a href="index.html">
+                            <!-- <span aria-hidden="true" class="icon_documents_alt icon"></span> -->
+                            <span class="text-highlight">API</span><span class="text-bold"><i>Scanner</i></span>
+                        </a>
+                    </h1>
+                    
+                </div>
+                
+               <!--  <div class="top-search-box">
+	                 <form class="form-inline search-form justify-content-center" action="" method="get">
+	            
+			            <input type="text" placeholder="Search..." name="search" class="form-control search-input">
+			            
+			            <button type="submit" class="btn search-btn" value="Search"><i class="fas fa-search"></i></button>
+			            
+			        </form>
+                </div> -->
+                
+            </div><!--//container-->
+        </header><!--//header-->
+        <div class="doc-wrapper">
+            <div class="container">
+                <div id="doc-header" class="doc-header text-center">
+                    <h1 class="doc-title"><i class="icon fa fa-paper-plane"></i> API<i>Scanner</i></h1>
+                    <div class="meta"><i class="far fa-clock"></i> Last updated: Nov 20th, 2020</div>
+                </div><!--//doc-header-->
+                <div class="doc-body row">
+                    <div class="doc-content col-md-9 col-12 order-1">
+                        <div class="content-inner">
+                            <section id="download-section" class="doc-section">'
+                                <h1 class="section-title">Towards Automated Detection of Deprecated APIs in Python Frameworks</h1>
+                                <h3 id = "description" class="block-title">What is API<i>Scanner?</i></h3>
+                                <div class="section-block">
+                                    <p>API<i>Scanner</i> is Visual Studio Code extension, that highlights the deprecated API elements used in python language. The current version only detects deprecated APIs present in six python frameworks - <i>Scikit-learn</i>, <i>Numpy</i>, <i>Matplotlib</i>, <i>Pandas</i>, <i>Scipy</i>, <i>Seaborn</i> </p>
+                                </div>
+                                <h3 id = "features" class="block-title">Features of API<i>Scanner</i></h3>
+                                <div class="section-block">
+                                    <ol>
+                                        <li><p>An algorithm to automatically identify deprecated APIs present source code of python library. </p></li>
+                                        <li><p>Identifies the deprecated API elements present in the current active editor.</p></li>
+                                        <li><p>On hover, hovercard pop-up shows the information regarding the deprecation (such as version in which it has been deprecated and any available replacement message provided by the library developer).</p></li>
+                                    </ol>
+                                </div>
+                                <h3 id = "uses" class="block-title">Uses of API<i>Scanner</i></h3>
+                                <div class="section-block">
+                                    <ol>
+                                        <li><p>Deprecated APIs are discouraged from being used in further software developments.</p></li>
+                                        <li><p>To help developers mitigate the usage of deprecated APIs during new software developments, the developer must be aware of the usage of deprecated APIs in the project.</p></li>
+                                        <li><p>Manually detecting and replacing deprecated APIs is a tedious and time-consuming task due to the large number of API calls used in the projects.</p></li>
+                                        <li><p>With the help of API<i>Scanner</i> developers can identify the deprecated APIs in the developing phase.</p></li>
+                                    </ol>
+                                </div>
+                            </section><!--//doc-section-->
+                            <section id="installation-section" class="doc-section">
+                                <h2 class="section-title">Installation</h2>
+                                <div id="step1"  class="section-block">
+                                    <h3 class="block-title">Install from Marketplace</h3>
+                                    <div class="code-block">
+                                        <!-- <h6>Default code example:</h6> -->
+                                        <p>Click on <a href="https://marketplace.visualstudio.com/items?itemName=Rishitha.apiscanner#review-details">API<i>Scanner</i></a> to download the extension from VS Code marketplace. Now, it will prompt you to install the extension in VS Code</p>
+                                        <p>Otherwise, In visual studio code, click (ctrl+shift+x) to open Extensions tab. Now search for APIScanner and install it.</p>
+                                        <!-- <p><code>git clone https://github.com/rishitha957/ADepD.git</code></p>
+                                        <p>Activate virtual environment for python (if any). Run main.py file using the following command, and pass the path of ML library as the parameter.</p>
+                                        <p><code>python main.py &lt;path to ML library&gt;</code></p> -->
+                                        <a href="https://marketplace.visualstudio.com/items?itemName=Rishitha.apiscanner#review-details" class="btn btn-green" target="_blank"><i class="fas fa-download"></i> Download Extension</a>
+                                    </div><!--//code-block-->
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            <section id="icons-section" class="doc-section">
+                                <h2 class="section-title">Working of API<i>Scanner</i></h2>
+                                <div class="section-block">
+                                    <p>The approach followed by API<i>Scanner</i> is summarized below:</p>
+                                    <ol>
+                                        <li><p>In the current active editor, it extracts the import statements to identify the libraries being used in the current program.</p></li>
+                                        <li><p>We then parse the soure code of library to generate Abstract Syntax Tree.</p></li>
+                                        <!-- <li><p>Structure of AST helps to realize the relationship between class declaration and function definition with decorator, hard-coded warnings, and comments</p></li> -->
+                                        <li><p>We then extract all the deprecated API elements declared using the above three methods.</p></li>
+                                        <li><p>API<i>Scanner</i>, now highlights all the deprecated API elements in the VS Code Editor, by matching with list of deprecated API elements we generated.</p></li>
+                                    </ol>
+                                </div><!--//section-block-->
+                                <div class="section-block">
+                                    <img class="img-fluid" src="assets/images/updated_process_diagram.PNG" alt="elegant icons" />
+                                </div><!--//section-block-->
+                                
+                            </section><!--//doc-section-->
+                            <section id="code-section" class="doc-section">
+                                <h2 class="section-title">Source Code of API<i>Scanner</i></h2>
+                                 <div class="section-block">
+                                    <p>
+                                        Source code of the extension can be found here - <a href="https://github.com/rishitha957/APIScanner-dev">API<i>Scanner</i>-Dev</a> 
+                                        <ol>
+                                            <li><p>The file package.json triggers the extension, whenever python programming language used.</p></li>
+                                            <li><p>out/commands/pyScripts contains the python scripts that generates the list of deprecated API elements.</p></li>
+                                            <li><p>extension.ts file uses these list of deprecated API elements to highlight the usage of deprecated elements in the current active editor.</p></li>
+                                        </ol>
+                                    </p>
+                                </div>
+                                <!-- </div>//section-block  -->
+                                <!-- <div id="html" class="section-block">
+                                    <div class="code-block">
+                                        <h6>Algorithm</h6>
+                                        <pre><code class="language-python">
+class ClassVisitor(ast.NodeVisitor):
+    def __init__(self):
+        self.class_names = []
+        self._class_nodes = []
+        self._func_nodes = []
+    def generic_visit(self,node):
+        if isinstance(node, ast.ClassDef):
+            self.class_names.append(node.name)
+            self._class_nodes.append(node)
+        ast.NodeVisitor.generic_visit(self,node)
+                                        </code></pre>
+                                    </div>/code-block-->
+                                <!-- </div>//section-block -->
+                            </section><!--//doc-section-->
+                            <section id="tables-section" class="doc-section">
+                                <h2 class="section-title">Results</h2>
+                                <div class="section-block">
+                                    <p>Table I summarizes the total number  of  deprecated  API elements detected by the Algorithm. The proposed algorithm identified 838 out of 871 API elements across six different Python libraries
+                                    </p>
+                                </div>
+                                <div class="section-block">
+                                    <img src="assets/images/results.JPG">
+                                </div><!--//section-block-->
+                            </section><!--//doc-section-->
+                            <section id="video-section" class="doc-section">
+                                <h2 class="section-title">Demonstration</h2>
+                                <div class="section-block">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <!-- <h6>Demo video here</h6> -->
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1hy_ugf-iek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div><!--//row-->
+                                </div><!--//section-block-->
+                            
+                            
+                            </section><!--//doc-section-->
+                        </div><!--//content-inner-->
+                    </div><!--//doc-content-->
+                    <div class="doc-sidebar col-md-3 col-12 order-0 d-none d-md-flex">
+                        <div id="doc-nav" class="doc-nav">
+	                        
+	                            <nav id="doc-menu" class="nav doc-menu flex-column sticky">
+	                                <a class="nav-link scrollto" href="#download-section">Tool Description</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#description">What is API<i>Scanner</i></a>
+                                    </nav><!--//nav-->
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#features">Features of API<i>Scanner</i></a>
+                                    </nav><!--//nav-->
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#uses">Uses of API<i>Scanner</i></a>
+                                    </nav><!--//nav-->
+	                                <a class="nav-link scrollto" href="#installation-section">Installation</a>
+                                    <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#step1">Install from Marketplace</a>
+                                    </nav><!--//nav-->
+                                    <a class="nav-link scrollto" href="#icons-section">Working of API<i>Scanner</i></a>
+	                                <a class="nav-link scrollto" href="#code-section">Source Code of API<i>Scanner</i></a>
+                                    <!-- <nav class="doc-sub-menu nav flex-column">
+                                        <a class="nav-link scrollto" href="#html">Parsing class</a>
+                                    </nav> --><!--//nav-->
+	                                <a class="nav-link scrollto" href="#tables-section">Results</a>
+	                                <a class="nav-link scrollto" href="#video-section">Demonstration</a>
+	                            </nav><!--//doc-menu-->
+	                        
+                        </div>
+                    </div><!--//doc-sidebar-->
+                </div><!--//doc-body-->              
+            </div><!--//container-->
+        </div><!--//doc-wrapper-->
+        
+        <div id="promo-block" class="promo-block">
+            <div class="container">
+                <div class="promo-block-inner">
+                    <h3 class="promo-title text-center">Contributors</h3>
+                    <p class = "text-center"><b>Aparna Vadlamani, Rishitha Kalicheti, Sridhar Chimalakonda <br>
+                    <i>Research in Intelligent Software & Human Analytics (RISHA) Lab <br>
+                    Dept. of Computer Science & Engineering<br>
+                    Indian Institute of Technology Tirupati, Tirupati, India.<br>
+                    cs17b005@iittp.ac.in, cs17b014@iittp.ac.in, ch@iittp.ac.in </i></b>
+                    </p>
+                </div><!--//promo-block-inner-->  
+            </div><!--//container-->
+        </div><!--//promo-block-->
+        
+    </div><!--//page-wrapper-->
+    <!-- Main Javascript -->          
+    <script type="text/javascript" src="assets/plugins/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/bootstrap/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="assets/plugins/prism/prism.js"></script>    
+    <script type="text/javascript" src="assets/plugins/jquery-scrollTo/jquery.scrollTo.min.js"></script>      
+    <script type="text/javascript" src="assets/plugins/stickyfill/dist/stickyfill.min.js"></script>                                                             
+    <script type="text/javascript" src="assets/js/main.js"></script>
+    
+</body>
+</html> 
+
