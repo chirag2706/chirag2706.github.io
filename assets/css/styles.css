@@ -1437,6 +1437,10 @@ select {
   color: #8A40A7;
 }
 
+.commandDesign{
+  background-color: #41b2ec;
+}
+
 @media (max-width: 575.98px) {
   .main-search-box {
     width: 100%;
@@ -1463,3 +1467,5 @@ select {
     width: 560px;
   }
 }
+
+
