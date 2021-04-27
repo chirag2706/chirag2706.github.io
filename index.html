@@ -128,7 +128,7 @@
                                         <li><p>It automatically detects and extracts error message occured in vscode terminal.</p></li>
                                         <li><p>It recommends relevant <i>stackoverflow posts</i> based on extracted query from vscode terminal within vscode.</p></li>
                                         <li><p>It recommends relevant <i>youtube videos</i> based on extracted query from vscode terminal within vscode.</p></li>
-                                        <li><p>This feature only detects runtime and compilation errors of python and java language.</p></li>
+                                        <li><p>This query only detects runtime and compilation errors of python and java language.</p></li>
                                     </ol>
                                 </div>
                                 <h3 id = "error-query-run" class="block-title">How to run</h3>
@@ -139,11 +139,11 @@
                                             (Ctrl+Shift+E). Then user will be given an option ( StackOverFlow or YouTube).</p></li>
                                     </ol>
                                 </div>
-                                <h3 id = "search-query-design" class="block-title">Design</h3>
+                                <h3 id = "error-query-design" class="block-title">Design</h3>
                                 <div class="section-block">
                                     <img src="assets/images/errorQuery.jpg">
                                 </div>
-                                <h3 id = "search-query-video" class="section-title">Demonstration</h3>
+                                <h3 id = "error-query-video" class="section-title">Demonstration</h3>
                                 <div class="section-block">
                                     <div class="row">
                                         <div class="col-md-6 col-12">
@@ -156,6 +156,52 @@
                                 </div><!--//section-block-->
 
                             </section><!--//doc-section-->
+
+                            <section id="snippet-query-heading" class="doc-section">'
+                                <h1 class="section-title">Snippet Query</h1>
+                                <h3 id = "snippet-query-intro" class="block-title">Introduction</h3>
+                                <div class="section-block">
+                                    <i>Snippet Query</i> is a query which helps developers to generate code snippets from english query.This query automatically detects file type and tries to recommend relevant stackoverflow code snippets and geeksforgeeks code snippets and paste them on vscode editor ,so that user can immediately able to see generated code from input query.  
+                                </div>
+                                <h3 id = "snippet-query-features" class="block-title">Features</h3>
+                                <div class="section-block">
+                                    <ol>
+                                        <li><p>It automatically detects for what type of programming language,code snippets should be recommended.</p></li>
+                                        <li><p>It uses a model called <i>COCOMO model</i> which is a software sizing algorithm inorder to rank code snippets based on time and effort.</p></li>
+                                        <li><p>It recommends relevant <i>stackoverflow posts</i> based on extracted query from vscode editor within vscode and automatically paste the most relevant code snippets in vscode editor where the cursor is currently
+                                            positioned ( along with the link for that code as comment ).</p></li>
+                                        <li><p>It recommends relevant <i>geeksforgeeks posts</i> based on extracted query from vscode editor within vscode and automatically paste the most relevant code snippets in vscode editor where the cursor is currently
+                                            positioned ( along with the link for that code as comment ).</p></li>
+                                        <li><p>It can simultaneously run two or more queries at the same time using threading concept.</p></li>
+                                        <li><p>This query only generates code snippets of python and java language.</p></li>
+                                    </ol>
+                                </div>
+                                <h3 id = "snippet-query-run" class="block-title">How to run</h3>
+                                <div class="section-block">
+                                    <ol>
+                                        <li><p><i>Please note that,In order to run snippet query ,which is provided by this extension,make sure dev-boon extension is activated by pressing (Ctrl+Shift+A).</i></p></li>
+                                        <li><p>Users can run this query directly on our extension’s search box by simply writing an <i>English</i>
+                                            sentence enclosed in between <i>?</i> and <i>?</i> pressing (Ctrl+Shift+N). Then user will be given an option ( StackOverFlow or geeksforgeeks).</p></li>
+                                    </ol>
+                                </div>
+                                <h3 id = "snippet-query-design" class="block-title">Design</h3>
+                                <div class="section-block">
+                                    <img src="assets/images/snippetQuery.jpg">
+                                </div>
+                                <h3 id = "snippet-query-video" class="section-title">Demonstration</h3>
+                                <div class="section-block">
+                                    <div class="row">
+                                        <div class="col-md-6 col-12">
+                                            <!-- <h6>Demo video here</h6> -->
+                                            <div class="embed-responsive embed-responsive-4by3">
+                                                <iframe width="560" height="315" src="https://www.youtube.com/embed/1hy_ugf-iek" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                            </div>
+                                        </div>
+                                    </div><!--//row-->
+                                </div><!--//section-block-->
+
+                            </section><!--//doc-section-->
+
 
 
 
